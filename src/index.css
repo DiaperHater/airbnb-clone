@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.wrapper {
+    @apply w-[1200px] max-w-full px-[30px];
+}
