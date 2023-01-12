@@ -3,18 +3,9 @@ import cardsData from './cardsData'
 
 export default function CardsBlock() {
 
-    const cardElements = cardsData.map( card => {
+    const cardElements = cardsData.map( cardData => {
         return (
-            <Card 
-                key={card.id}
-                image={card.image}
-                rating={card.rating}
-                count={card.count}
-                region={card.region}
-                title={card.title}
-                priceStartAt={card.priceStartAt}
-                openSpots={card.openSpots}
-            />               
+            <Card key={cardData.id} data={cardData}/>               
         )
     } )
 
