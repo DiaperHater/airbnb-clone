@@ -1,5 +1,6 @@
 export default [
     {
+        id: 1,
         image: "swimmer.png",
         rating: "5.0",
         count: 6,
@@ -9,6 +10,7 @@ export default [
         state: "sold out",
     },
     {
+        id: 2,
         image: "wedding.png",
         rating: "5.0",
         count: 30,
@@ -18,6 +20,7 @@ export default [
         state: "ONLINE",
     },
     {
+        id: 3,
         image: "bike.png",
         rating: "4.8",
         count: 2,

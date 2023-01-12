@@ -6,6 +6,7 @@ export default function CardsBlock() {
     const cardElements = cardsData.map( card => {
         return (
             <Card 
+                key={card.id}
                 image={card.image}
                 rating={card.rating}
                 count={card.count}
