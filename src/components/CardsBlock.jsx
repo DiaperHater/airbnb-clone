@@ -5,7 +5,10 @@ export default function CardsBlock() {
 
     const cardElements = cardsData.map( cardData => {
         return (
-            <Card key={cardData.id} data={cardData}/>               
+            <Card 
+                key={cardData.id} 
+                {...cardData}    
+            />               
         )
     } )
 
