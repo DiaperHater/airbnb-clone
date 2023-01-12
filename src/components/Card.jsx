@@ -3,12 +3,21 @@ import redStartIcon from '../../public/assets/images/icon-red-star.svg'
 
 export default function Card(props) {
 
-    const {image, rating, count, region, title, priceStartAt, state} = props
+    const {image, rating, count, region, title, priceStartAt, openSpots} = props
+
+    const stateText = (openSpots === 0) ? 'sold out' 
+        : (region.toLowerCase() === 'online') ? 'online' 
+        : undefined
+
+    console.log(stateText)
 
     return(
         <div className="w-[176px] space-y-2 relative shrink-0">
             <img src={ `/assets/images/${image}` } alt="" className="w-full h-[235px] rounded-lg" />
-            { state && <span className="min-w-[60px] max-w-[120px] p-1 bg-gray-200 rounded text-[10px] uppercase absolute top-[6px] left-[6px] text-center">{state}</span> }
+            { 
+                stateText && 
+                <span className="min-w-[60px] max-w-[120px] p-1 bg-gray-200 rounded text-[10px] uppercase absolute top-[6px] left-[6px] text-center">{stateText}</span> 
+            }
             <div className="flex space-x-1">
                 <img src={redStartIcon} alt="" className="w-[14px]" />
                 <span className="text-xs font-light">{rating}</span>

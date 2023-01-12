@@ -13,7 +13,7 @@ export default function CardsBlock() {
                 region={card.region}
                 title={card.title}
                 priceStartAt={card.priceStartAt}
-                state={card.state}
+                openSpots={card.openSpots}
             />               
         )
     } )
