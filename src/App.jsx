@@ -1,6 +1,6 @@
 import Navbar from './components/Navbar'
 import HeroSection from './components/HeroSection'
-import Card from './components/Card'
+import CardsBlock from './components/CardsBlock'
 
 function App() {
 
@@ -8,7 +8,7 @@ function App() {
     <div>
       <Navbar />
       <HeroSection />
-      <Card />
+      <CardsBlock />
     </div>
   )
 }
